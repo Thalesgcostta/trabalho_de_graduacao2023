@@ -165,7 +165,7 @@ time {
 
 .search-box{
   position: absolute;
-  top: 18.5%;
+  top: 140px;
   left: 50%;
   transform: translate(-50%,-50%);
   background: black;
@@ -200,7 +200,7 @@ time {
   display: flex;
 }
 .search-box:hover > .search-txt{
-  width: 240px;
+  width: 230px;
   padding: 0 6px;
   display: flex;
 }
@@ -209,4 +209,72 @@ time {
   display: flex;
   color: #0ff074;
 }
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+}
+@media screen and (max-width: 648px) {
+  .search-box{
+    top: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .search-box{
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 580px){
+    .search-box:hover > .search-txt{
+      width: 130px;
+    }
+    .search-txt{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 360px){
+    .search-box:hover > .search-txt{
+      width: 90px;
+    }
+    .search-txt{
+      font-size: 12px;
+    }
+    
+  }
+  @media screen and (max-width: 350px) {
+    .search-box{
+      top: 260px;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .search-box{
+      top: 270px;
+    }
+    .search-box:hover > .search-txt{
+      width: 70px;
+    }
+    .search-txt{
+      font-size: 10px;
+    }
+  }
 
