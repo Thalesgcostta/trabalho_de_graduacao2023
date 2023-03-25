@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #0c0e0f;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+
+/*_______________________________TITULO*/
+
+.intro {
+  background-color: #022502;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 60px 0;
+  font-family: system-ui;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 1200px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/*_________________________________TIMELINE_________________________________*/
+
+.timeline ul {/*Fundo da pagina*/
+  background: #0ff074;
+  padding: 50px 0;
+}
+
+.timeline ul li {/*Linha base*/
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgb(10, 10, 10);
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {/*Caixa de imagem*/
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #020202;
+  cursor: pointer;
+  border-radius: 2%;
+}
+
+.imagem_turmas{
+  border-radius: 5%;
+  position: relative;
+}
+
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {/*Seta caixa de imagem(Direita)*/
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #0c0c0c transparent transparent; 
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {/*Seta caixa de imagem(Esquerda)*/
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #000000;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/*___________________________________EFEITOS______________________________________ */
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {/*Circulo da time line*/
+  background: #070607;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.imagem_turmas{
+    max-width: 100%;
+}
+
+.imagem_titulo{
+    max-width: 30%;
+    padding-left: 250px;
+}
+
+
+
+/* __________________________Search___________________________________ */
+
+.search-box{
+  position: absolute;
+  top: 18.5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: black;
+  height: 50px;
+  border-radius: 20px;
+  padding: 0px;
+
+}
+.search-btn{
+  color: black;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  background: #0ff074;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+  line-height: 45px;
+  width: 0px;
+  display: flex;
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+  display: flex;
+}
+.search-box:hover > .search-btn{
+  background: black;
+  display: flex;
+  color: #0ff074;
+}
+
