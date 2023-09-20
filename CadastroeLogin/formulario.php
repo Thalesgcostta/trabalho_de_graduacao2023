@@ -54,9 +54,9 @@ if(isset($_POST['submit']))
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.65);
-            padding: 15px;
-            border-radius: 15px;
-            width: 20%;
+            padding: 20px;
+            border-radius: 17px;
+            width: 30%;
             color: white;
         }
         fieldset{

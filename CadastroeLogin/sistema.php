@@ -46,12 +46,28 @@
             gap: .1%;
             
         }
+      .loca{
+            text-decoration: none;
+            color: white;
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: darkgreen;
+            height: 10px;
+      }
+      .loca:hover{
+            background-color: #0ff074;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CADASTRO E ALTERAÇÃO DOS DADOS</a>
+            <div class="box">
+            <a class=loca href="formulario.php">Cadastrar novo usuário</a>
+    </div>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
     </button>

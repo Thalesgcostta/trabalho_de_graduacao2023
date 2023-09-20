@@ -35,7 +35,7 @@
 var btnCad = document.getElementById('1900');
 
 btnCad.addEventListener('click', () => {
-  location.href = "galeria_de_fotos/dist/index.html"
+  location.href = "novagallery-main/src/index.php"
 })
 
 var btnCad = document.getElementById('1800');
