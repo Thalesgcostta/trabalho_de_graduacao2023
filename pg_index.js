@@ -1,11 +1,8 @@
 (function () {
   "use strict";
-
-  // define variables
   var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -25,34 +22,39 @@
     }
   }
 
-  // listen for events
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 })();
 
 /* Botão pagina  */
-var btnCad = document.getElementById('1900');
+var btnCad = document.getElementById('1950');
 
 btnCad.addEventListener('click', () => {
-  location.href = "novagallery-main/src/index.php"
+  location.href = "galeria-dinamica-master/index.php"
 })
 
-var btnCad = document.getElementById('1800');
+var btnCad = document.getElementById('1960');
 
 btnCad.addEventListener('click', () => {
-  location.href = "galeria_de_fotos/dist/index.html"
+  location.href = "galeria-dinamica-master/index.php"
 })
 
-var btnCad = document.getElementById('1700');
+var btnCad = document.getElementById('1970');
 
 btnCad.addEventListener('click', () => {
-  location.href = "galeria_de_fotos/dist/index.html"
+  location.href = "galeria-dinamica-master/index.php"
 })
 
-var btnCad = document.getElementById('1600');
+var btnCad = document.getElementById('1980');
 
 btnCad.addEventListener('click', () => {
-  location.href = "galeria_de_fotos/dist/index.html"
+  location.href = "galeria-dinamica-master/index.php"
+})
+
+var btnCad = document.getElementById('1990');
+
+btnCad.addEventListener('click', () => {
+  location.href = "galeria-dinamica-master/index.php"
 })
 

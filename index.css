@@ -209,16 +209,15 @@ time {
   display: flex;
   color: #0ff074;
 }
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* Responsividade
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
   }
   .timeline ul li:nth-child(even) div {
     left: -289px;
-    /*250+45-6*/
   }
 }
 
@@ -278,8 +277,6 @@ time {
     }
   }
  
-
-
   footer {
     color: #0ff074; /* Verde claro */
     padding: 20px;
@@ -289,9 +286,7 @@ time {
   h3 {
     font-size: 18px;
   }
-
   
-
   .social-icons {
     list-style-type: none;
     padding: 0;

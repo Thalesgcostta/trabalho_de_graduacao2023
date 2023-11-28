@@ -66,7 +66,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CADASTRO E ALTERAÇÃO DOS DADOS</a>
             <div class="box">
-            <a class=loca href="formulario.php">Cadastrar novo usuário</a>
+            <a class=loca href="formulario.php">Cadastrar Novo Usuário Admin</a>
+            <a class=loca href="formulario2.php">Cadastrar Novo Usuário Comum</a>
     </div>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

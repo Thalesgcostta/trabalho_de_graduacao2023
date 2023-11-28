@@ -2,7 +2,7 @@
 $dbHost = 'Localhost';
 $dbUsername = 'root';
 $dbPassword = '';
-$dbName = 'upload';
+$dbName = 'galeria-dinamica';
 
 $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 

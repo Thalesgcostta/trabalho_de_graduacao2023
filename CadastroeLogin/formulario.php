@@ -2,22 +2,6 @@
 
 if(isset($_POST['submit']))
 {
-    //print_r('Nome: ' . $_POST['nome']);
-    //print_r('<br>');
-    //print_r('Email: ' . $_POST['email']);
-    //print_r('<br>');
-    //print_r('Telefone: ' . $_POST['telefone']);
-    //print_r('<br>');
-    //print_r('Sexo: ' . $_POST['genero']);
-    //print_r('<br>');
-    //print_r('Data de nascimento: ' . $_POST['data_nascimento']);
-    //print_r('<br>');
-    //print_r('Cidade: ' . $_POST['cidade']);
-    //print_r('<br>');
-    //print_r('Estado: ' . $_POST['estado']);
-    //print_r('<br>');
-    //print_r('Endereco: ' . $_POST['endereco']);
-
     include_once('config.php');
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
@@ -123,7 +107,7 @@ if(isset($_POST['submit']))
     </style>
 </head>
 <body>
-<a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="black" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+<a href="sistema.php"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="black" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
 </svg></a>
     <div class="box">
